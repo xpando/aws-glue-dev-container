@@ -534,7 +534,7 @@ c.JupyterApp.log_level = 'WARN'
 
 ## The directory for user settings.
 #  Default: '/root/.jupyter/lab/user-settings'
-c.LabApp.user_settings_dir = '/app/.jupyter/lab/user-settings'
+c.LabApp.user_settings_dir = '/project/.jupyter/user-settings'
 
 ## Whether to serve the app in watch mode
 #  Default: False
@@ -853,7 +853,7 @@ c.ServerApp.ip = '0.0.0.0'
 
 ## DEPRECATED, use root_dir.
 #  Default: ''
-c.ServerApp.notebook_dir = '/project'
+# c.ServerApp.notebook_dir = ''
 
 ## Whether to open in a browser after starting.
 #                          The specific browser used is platform dependent and
@@ -885,7 +885,7 @@ c.ServerApp.open_browser = False
 
 ## The port the server will listen on (env: JUPYTER_PORT).
 #  Default: 0
-c.ServerApp.port = 80
+c.ServerApp.port = 8888
 
 ## The number of additional ports to try if the specified port is not available
 #  (env: JUPYTER_PORT_RETRIES).
@@ -916,7 +916,7 @@ c.ServerApp.port = 80
 
 ## The directory to use for notebooks and kernels.
 #  Default: ''
-# c.ServerApp.root_dir = ''
+c.ServerApp.root_dir = '/project'
 
 ## The session manager class to use.
 #  Default: 'jupyter_server.services.sessions.sessionmanager.SessionManager'

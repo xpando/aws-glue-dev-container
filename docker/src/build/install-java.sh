@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# No version 8 corretto that includes a JDK in the yum repos so download and install ourselves
+
 CORRETTO_VERSION=8.322.06.2
 
 echo "Installing Amazon Corretto JDK $CORRETTO_VERSION"
